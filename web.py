@@ -23,7 +23,7 @@ st.title("My To-Do App")
 # st.write("this is my first app")
 
 for todo in todos:
-    checkbox=st.checkbox(todo, key=todo)# give checkboxes
+    checkbox = st.checkbox(todo, key=todo)# give checkboxes
     if checkbox:
         todos.pop()
         functions.write_todos(todos)
@@ -34,5 +34,5 @@ for todo in todos:
 st.text_input(label="enter",placeholder="Enter Your To-Do...",
               on_change=add_todo,key='new_todo')
 
-# we create pip freeze > requirements.txt file as we had tos how our project publicly so w use that method
+# we create pip freeze > requirements.txt file as we had to see how our project seen publicly so we use that method.
 
